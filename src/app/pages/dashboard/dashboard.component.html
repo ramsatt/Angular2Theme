@@ -11,56 +11,64 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
           <h1>
-              Widgets
-              <small>Preview page</small>
+              Dashboard
+              <small></small>
           </h1>
           <ol class="breadcrumb">
               <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-              <li class="active">Widgets</li>
+              <li class="active">Dsashboard</li>
           </ol>
       </section>
 
       <!-- Main content -->
       <section class="content">
-      <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <app-iconinfobox [title]="'kiruthika'" [count]="1234" [bgcolor]="'green'" [icon]="'fa-flag-o'"></app-iconinfobox>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <app-iconinfobox [title]="'Hello'" [count]="1234" [bgcolor]="'maroon'" [icon]="'fa-envelope-o'"> </app-iconinfobox>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <app-iconinfobox [title]="1111" [count]="1234" [bgcolor]="'navy'" [icon]="'fa-files-o'"></app-iconinfobox>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-              <app-iconinfobox [title]="'Hello'" [count]="1234" [bgcolor]="'red'" [icon]="'fa-comments-o'"></app-iconinfobox>
-          </div>
-
-      </div>
           <div class="row">
-
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                  <app-smallinfobox [title]="'Note'" [count]="134" [color]="'maroon'" [icon]="'fa-shopping-cart'"></app-smallinfobox>
+              <div class="col-lg-3 col-xs-6">
+                <app-smallinfobox [title]="'Accounts'" [count]="38" [color]="'maroon'" [icon]="'fa-bank'"></app-smallinfobox>
               </div>
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                  <app-smallinfobox [title]="'Note'" [count]="134" [color]="'green'" [icon]="'fa-shopping-cart'"></app-smallinfobox>
+              <div class="col-lg-3 col-xs-6">
+                  <app-smallinfobox [title]="'Sites'" [count]="1565" [color]="'purple'" [icon]="'fa-industry'"></app-smallinfobox>
+              </div>
+              <div class="col-lg-3 col-xs-6">
+                  <app-smallinfobox [title]="'Assets'" [count]="3250" [color]="'red'" [icon]="'fa-cubes'"></app-smallinfobox>
+              </div>
+              <div class="col-lg-3 col-xs-6">
+                  <app-smallinfobox [title]="'Tickets'" [count]="3294" [color]="'navy'" [icon]="'fa-ticket'"></app-smallinfobox>
               </div>
           </div>
           <div class="row">
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                  <app-progressinfobox [title]="'Sathish'" [icon]="'fa-bookmark-o'" [count]="123" [color]="'red'" [percent]="90" [days]="30">
-
-                  </app-progressinfobox>
+              <div class="col-lg-3 col-xs-6">
+                  <app-smallinfobox [title]="'Dispatch'" [count]="19" [color]="'green'" [icon]="'fa-truck'"></app-smallinfobox>
               </div>
-              <div class="col-md-3 col-sm-6 col-xs-12">
-                  <app-progressinfobox [title]="'Sathish'" [icon]="'fa-bookmark-o'" [count]="123" [color]="'navy'" [percent]="90" [days]="30">
-
-                  </app-progressinfobox>
+              <div class="col-lg-3 col-xs-6">
+                  <app-smallinfobox [title]="'Schedule'" [count]="9" [color]="'yellow'" [icon]="' fa-calendar'"></app-smallinfobox>
+              </div>
+              <div class="col-lg-3 col-xs-6">
+                  <app-smallinfobox [title]="'Branches'" [count]="1705" [color]="'blue'" [icon]="'fa-industry'"></app-smallinfobox>
+              </div>
+              <div class="col-lg-3 col-xs-6">
+                  <app-smallinfobox [title]="'Parts'" [count]="139" [color]="'fuchsia-active'" [icon]="'fa-wrench'"></app-smallinfobox>
               </div>
           </div>
-          <br>
-          <br>
-          <br>
+          <div class="row">
+              <div class="col-lg-3 col-xs-6">
+                  <app-smallinfobox [title]="'Request Parts'" [count]="26" [color]="'light-blue-active'" [icon]="'fa-bank'"></app-smallinfobox>
+              </div>
+              <div class="col-lg-3 col-xs-6">
+                  <app-smallinfobox [title]="'Purchase Order'" [count]="11" [color]="'teal-active'" [icon]="'fa-bank'"></app-smallinfobox>
+              </div>
+              <div class="col-lg-3 col-xs-6">
+                  <app-smallinfobox [title]="'Goods Recipient'" [count]="15" [color]="'olive-active'" [icon]="'fa-user'"></app-smallinfobox>
+              </div>
+              <div class="col-lg-3 col-xs-6">
+                  <app-smallinfobox [title]="'Suppliers'" [count]="10" [color]="'orange-active'" [icon]="' fa-users'"></app-smallinfobox>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-3 col-xs-6">
+                  <app-smallinfobox [title]="'Warehouse'" [count]="6" [color]="'yellow'" [icon]="'fa-balance-scale'"></app-smallinfobox>
+              </div>
+          </div>
       </section></div>
 
 <app-appfooter>
