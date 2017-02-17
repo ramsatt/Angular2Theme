@@ -3,6 +3,9 @@
 @import "../node_modules/ionicons/dist/css/ionicons.css";
 @import"../node_modules/admin-lte/dist/css/AdminLTE.min.css";
 @import "../node_modules/admin-lte/dist/css/skins/_all-skins.css";
+@import '../node_modules/@swimlane/ngx-datatable/release/index.css';
+@import '../node_modules/@swimlane/ngx-datatable/release/material.css';
+@import '../node_modules/@swimlane/ngx-datatable/release/assets/icons.css';
 
 .loading {
     opacity: 0;

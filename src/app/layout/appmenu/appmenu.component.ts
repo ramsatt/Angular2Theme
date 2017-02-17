@@ -9,7 +9,7 @@ export class AppmenuComponent implements OnInit {
   menu :any;
   constructor() {
     this.menu = [
-      {'title':'Home','link':'','icon':'fa-home'},
+      {'title':'Home','link':'dashboard','icon':'fa-home'},
       {'title':'Accounts','link':'accounts','icon':'fa-bank'},
       {'title':'Sites','link':'sites','icon':'fa-map'},
       {'title':'Assets','link':'assets','icon':'fa-cubes'},

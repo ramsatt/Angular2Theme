@@ -7,11 +7,8 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <script>
-      $(window, ".content-wrapper").resize(_.debounce(function () {
-          _this.fix();
-          _this.fixSidebar(); }, 250));
-  </script>
+
+
 </head>
 <body>
 
@@ -33,4 +30,12 @@
         <h2 align="center">Please wait a few seconds</h2>
       </div></app-root>
 </body>
+<script>
+    $(window).load(function() {
+        setTimeout(function() {
+            $.AdminLTE.layout.fix();
+            $.AdminLTE.layout.fixSidebar();
+        }, 250);
+    });
+</script>
 </html>
