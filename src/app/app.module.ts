@@ -5,7 +5,6 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { RowModule } from './module/layout/row/row.module';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
-import { DataTablesModule } from 'angular-datatables';
 
 //router
 import { routing } from './app.routes';
@@ -60,8 +59,7 @@ import { ReportsComponent } from './pages/reports/reports.component';
     RouterModule,
     routing,
     RowModule,
-    NgxDatatableModule,
-    DataTablesModule
+    NgxDatatableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
