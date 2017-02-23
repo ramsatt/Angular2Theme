@@ -1,0 +1,64 @@
+<body class="hold-transition skin-blue sidebar-mini">
+
+<div class="wrapper">
+  <app-appheader>
+
+  </app-appheader>
+  <app-appmenu>
+
+  </app-appmenu>
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <h1>
+    Accounts
+    <small></small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li class="active">Accounts</li>
+  </ol>
+</section>
+
+<!-- Main content -->
+<section class="content" style="min-height: 720px">
+
+  <div class="box">
+    <div class="box-header with-border">
+      <h3 class="box-title">Accounts</h3>
+    </div>
+    <!-- /.box-header -->
+    <div class="box-body">
+  <table datatable class="table table-condensed">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Account Name</th>
+      <th>State</th>
+      <th>Zip</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let r of rows" (click)="openaccount(r.id)">
+      <td>{{r.id}}</td>
+      <td>{{r.account}}</td>
+      <td>{{r.state}}</td>
+      <td>{{r.zip}}</td>
+      <td>{{r.description}}</td>
+    </tr>
+
+
+    </tbody>
+  </table>
+    </div>
+  </div>
+</section>
+  </div>
+  <app-appfooter>
+  </app-appfooter>
+</div>
+
+
+</body>

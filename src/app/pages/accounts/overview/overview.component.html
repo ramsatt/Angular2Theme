@@ -1,0 +1,268 @@
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+<div class="wrapper">
+  <app-appheader>
+
+  </app-appheader>
+  <app-appmenu>
+
+  </app-appmenu>
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Accounts
+        <small></small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Accounts</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="box box-primary box-solid">
+      <div class="box-header with-border">
+        <h3 class="box-title">MCM CORPORATION</h3>
+        <!-- /.box-tools -->
+      </div>
+      <!-- /.box-header -->
+      <div class="box-body">
+
+           <img class="profile-user-img img-responsive img-circle" src="assets/img/logo.jpg" alt="User profile picture">
+        <h3 class="text-navy text-center">Account Type : MCM Corporation</h3>
+          <table class="table table-bordered">
+            <tr>
+              <td width="20%"><b>ID:</b> </td>
+              <td width="30%">59</td>
+              <td width="20%">
+                <b>Name:</b>
+              </td>
+              <td width="30%">MCM Corporation</td>
+            </tr>
+            <tr>
+              <td><b>Address:</b></td>
+              <td>No 24, North Street, Azhisukudi</td>
+              <td>
+                <b>City:</b>
+              </td>
+              <td>Jayankondam</td>
+            </tr>
+            <tr>
+              <td><b>State:</b></td>
+              <td>Tamil Nadu</td>
+              <td>
+                <b>Country:</b>
+              </td>
+              <td>India</td>
+            </tr>
+            <tr>
+              <td><b>Zip:</b></td>
+              <td>621804</td>
+              <td>
+                <b>Mobile</b>
+              </td>
+              <td>+91 - 897 357 6694</td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <b>Description:</b><br>
+                Sample................<br>
+              </td>
+            </tr>
+          </table>
+        <br>
+        <sebm-google-map [latitude]="lat" [longitude]="lng">
+          <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
+        </sebm-google-map>
+
+      </div>
+      <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+  </div>
+  <!-- /.col -->
+
+  <div class="col-md-6">
+    <div class="box box-info box-solid">
+      <div class="box-header with-border">
+        <h3 class="box-title">Quick Access</h3>
+        <!-- /.box-tools -->
+      </div>
+      <!-- /.box-header -->
+      <div class="box-body">
+    <div class="row">
+    <div class="col-md-6">
+      <app-iconinfobox data-toggle="modal" data-target="#myModal" [title]="'Sites'" [count]="320" [icon]="'fa-industry'" [bgcolor]="'navy'"></app-iconinfobox>
+
+    </div>
+      <div class="col-md-6">
+        <app-iconinfobox [title]="'Assets'" [count]="143" [icon]="'fa-gavel'" [bgcolor]="'maroon-active'"></app-iconinfobox>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <app-iconinfobox [title]="'Tickets'" [count]="320" [icon]="'fa-ticket'" [bgcolor]="'green-active'"></app-iconinfobox>
+
+      </div>
+      <div class="col-md-6">
+        <app-iconinfobox [title]="'Parts'" [count]="143" [icon]="'fa-wrench'" [bgcolor]="'yellow-active'"></app-iconinfobox>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <app-iconinfobox [title]="'Hero Kits'" [count]="0" [icon]="'fa-h-square'" [bgcolor]="'blue'"></app-iconinfobox>
+
+      </div>
+      <div class="col-md-6">
+        <app-iconinfobox [title]="'Requested Parts'" [count]="143" [icon]="'fa-steam'" [bgcolor]="'purple-active'"></app-iconinfobox>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <app-iconinfobox [title]="'Shipments'" [count]="0" [icon]="'fa-paypal'" [bgcolor]="'black'"></app-iconinfobox>
+
+      </div>
+      <div class="col-md-6">
+        <app-iconinfobox [title]="'Contacts'" [count]="143" [icon]="'fa-users'" [bgcolor]="'red-active'"></app-iconinfobox>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <app-iconinfobox [title]="'Agreements'" [count]="0" [icon]="'fa-paste'" [bgcolor]="'orange-active'"></app-iconinfobox>
+
+      </div>
+      <div class="col-md-6">
+        <app-iconinfobox [title]="'Models'" [count]="143" [icon]="'fa-medium'" [bgcolor]="'lime-active'"></app-iconinfobox>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+    </section>
+  </div>
+  <app-appfooter>
+  </app-appfooter>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade modal-primary" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Quick View</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="box">
+              <div class="box-header with-border">
+                <h3 class="box-title">Sites</h3>
+              </div>
+              <!-- /.box-header -->
+              <div class="box-body">
+                <table datatable class="table table-bordered">
+                  <thead>
+                  <tr>
+                    <th style="width: 10px">#</th>
+                    <th>Sites</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>1.</td>
+                    <td>Update software</td>
+                  </tr>
+                                    </tbody>
+                </table>
+              </div>
+              <!-- /.box-body -->
+              <div class="box-footer clearfix">
+              </div>
+            </div>
+            <!-- /.box -->
+          </div>
+
+          <div class="col-md-6">
+            <div class="box">
+              <div class="box-header with-border">
+                <h3 class="box-title">Assets</h3>
+              </div>
+              <!-- /.box-header -->
+              <div class="box-body">
+                <table datatable class="table table-bordered">
+                  <thead>
+                  <tr>
+                    <th style="width: 10px">#</th>
+                    <th>Assets</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>1.</td>
+                    <td>Update software</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.box-body -->
+              <div class="box-footer clearfix">
+
+              </div>
+            </div>
+            <!-- /.box -->
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="box">
+              <div class="box-header with-border">
+                <h3 class="box-title">Tickets</h3>
+              </div>
+              <!-- /.box-header -->
+              <div class="box-body">
+                <table datatable class="table table-condensed">
+                  <thead>
+                  <tr>
+                    <th style="width: 10px">#</th>
+                    <th>Tickets</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>1.</td>
+                    <td>Update software</td>
+                  </tr>
+                   </tbody>
+                </table>
+              </div>
+              <!-- /.box-body -->
+              <div class="box-footer clearfix">
+                              </div>
+            </div>
+            <!-- /.box -->
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
