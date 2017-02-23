@@ -1,4 +1,13 @@
+<body class="hold-transition skin-blue sidebar-mini">
 
+<div class="wrapper">
+    <app-appheader>
+
+    </app-appheader>
+    <app-appmenu>
+
+    </app-appmenu>
+    <div class="content-wrapper">
       <!-- Content Header (Page header) -->
       <section class="content-header">
           <h1>
@@ -15,7 +24,7 @@
       <section class="content">
           <div class="row">
               <div class="col-lg-3 col-xs-6">
-                <app-smallinfobox [title]="'Accounts'" [count]="38" [color]="'maroon'" [icon]="'fa-bank'"></app-smallinfobox>
+                <app-smallinfobox (click)="openitem('accounts')" [title]="'Accounts'" [count]="38" [color]="'maroon'" [icon]="'fa-bank'"></app-smallinfobox>
               </div>
               <div class="col-lg-3 col-xs-6">
                   <app-smallinfobox [title]="'Sites'" [count]="1565" [color]="'purple'" [icon]="'fa-industry'"></app-smallinfobox>
@@ -61,6 +70,10 @@
               </div>
           </div>
       </section>
-
+    </div>
+    <app-appfooter>
+    </app-appfooter>
+</div>
+</body>
 
 

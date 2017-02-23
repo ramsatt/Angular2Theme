@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-appmenu',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppmenuComponent implements OnInit {
   menu :any;
-  constructor() {
+  constructor(private router: Router) {
     this.menu = [
       {'title':'Home','link':'dashboard','icon':'fa-home'},
       {'title':'Accounts','link':'accounts','icon':'fa-bank'},
@@ -24,6 +25,11 @@ export class AppmenuComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  menuitem(link)
+  {
+    this.router.navigate( [link] );
   }
 
 }

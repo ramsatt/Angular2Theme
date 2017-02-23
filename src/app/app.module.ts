@@ -3,8 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-import { RowModule } from './module/layout/row/row.module';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { DataTablesModule } from 'angular-datatables';
+import { AgmCoreModule } from 'angular2-google-maps/core';
+
 
 //router
 import { routing } from './app.routes';
@@ -28,6 +30,7 @@ import { BranchesComponent } from './pages/branches/branches.component';
 import { InventoryComponent } from './pages/inventory/inventory.component';
 import { AccountingComponent } from './pages/accounting/accounting.component';
 import { ReportsComponent } from './pages/reports/reports.component';
+import { OverviewComponent } from './pages/accounts/overview/overview.component';
 
 
 @NgModule({
@@ -50,7 +53,8 @@ import { ReportsComponent } from './pages/reports/reports.component';
     BranchesComponent,
     InventoryComponent,
     AccountingComponent,
-    ReportsComponent
+    ReportsComponent,
+    OverviewComponent
   ],
   imports: [
     BrowserModule,
@@ -58,8 +62,12 @@ import { ReportsComponent } from './pages/reports/reports.component';
     HttpModule,
     RouterModule,
     routing,
-    RowModule,
-    NgxDatatableModule
+    NgxDatatableModule,
+    DataTablesModule,
+    AgmCoreModule.forRoot({
+      apiKey: ''
+    })
+
   ],
   providers: [],
   bootstrap: [AppComponent]

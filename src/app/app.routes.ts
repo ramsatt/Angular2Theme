@@ -14,6 +14,7 @@ import { BranchesComponent } from './pages/branches/branches.component';
 import { InventoryComponent } from './pages/inventory/inventory.component';
 import { AccountingComponent } from './pages/accounting/accounting.component';
 import { ReportsComponent } from './pages/reports/reports.component';
+import { OverviewComponent } from './pages/accounts/overview/overview.component';
 
 const routes: Routes = [
     // Root
@@ -64,6 +65,10 @@ const routes: Routes = [
     {
         component: ReportsComponent,
         path: 'reports'
+    },
+    {
+        component: OverviewComponent,
+        path:'overview'
     }
 ];
 
